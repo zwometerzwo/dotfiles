@@ -1,5 +1,7 @@
 " Begin .vimrc
 
+let mapleader=' '
+
 set number          " show line numbers
 set rnu
 
