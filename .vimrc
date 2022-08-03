@@ -13,6 +13,7 @@ syntax on           " enable Syntax processing
 
 set cursorline      " highlight current line
 set clipboard+=unnamedplus
+set completeopt-=preview
 
 set showmatch       " highlight matching
 
@@ -25,6 +26,9 @@ set hlsearch        " highlight matches
 nnoremap <leader><space> :nohlsearch<CR>
 
 set showcmd         " show command in bottom bar
+
+set termguicolors
+set background=dark
 
 filetype indent on  "load filetype-specific indent file
 
