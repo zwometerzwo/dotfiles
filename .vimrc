@@ -12,13 +12,15 @@ set expandtab       " tabs are spaces
 syntax on           " enable Syntax processing
 
 set cursorline      " highlight current line
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus
 set completeopt-=preview
 
 set showmatch       " highlight matching
 
 noremap <tab> gt
 noremap <S-tab> gT
+noremap <Leader>y "+y
+noremap <Leader>p "+p
 
 set incsearch       " search as characters are entered
 set hlsearch        " highlight matches
