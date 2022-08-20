@@ -25,8 +25,12 @@ noremap <S-tab> gT
 noremap <Leader>y "+y
 noremap <Leader>p "+p
 
+vnoremap > >gv
+vnoremap < <gv
+
 set incsearch       " search as characters are entered
 set hlsearch        " highlight matches
+set ignorecase
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
