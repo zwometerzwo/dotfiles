@@ -11,6 +11,9 @@ set expandtab       " tabs are spaces
 
 syntax on           " enable Syntax processing
 
+" Set Gui Font of MacVim larger
+set gfn=Monaco:h14
+
 set cursorline      " highlight current line
 " set clipboard+=unnamedplus
 set completeopt-=preview
