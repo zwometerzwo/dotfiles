@@ -28,6 +28,11 @@ noremap <Leader>p "+p
 vnoremap > >gv
 vnoremap < <gv
 
+noremap - ddp
+noremap _ ddkP
+inoremap <c-u> <esc>viwUi
+nnoremap <c-u> viwU
+
 set incsearch       " search as characters are entered
 set hlsearch        " highlight matches
 set ignorecase
