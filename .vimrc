@@ -13,6 +13,22 @@ set tabstop=2       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
 
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<    " :set list shows all everything but whitespace
+
+" set laststatus=2
+" set statusline=
+" set statusline+=%f
+" set statusline+=\ 
+" set statusline+=%4l
+" set statusline+=/
+" set statusline+=%4L
+" set statusline+=L
+" set statusline+=\ 
+" set statusline+=%4c
+" set statusline+=C
+" set statusline+=\ 
+" set statusline+=%{&fileencoding?&fileencoding:&encoding}
+
 syntax on           " enable Syntax processing
 
 " Set Gui Font of MacVim larger
@@ -65,6 +81,7 @@ filetype indent on " file type based indentation
 " needed, and have indentation at 8 chars to be sure that all indents are tabs
 " (despite the mappings later):
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+autocmd FileType java set shiftwidth=4 softtabstop=0
 
 " End .vimrc
 
