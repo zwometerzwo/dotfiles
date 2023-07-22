@@ -12,7 +12,7 @@ set ruler
 set scrolloff=5
 
 set tabstop=2       " number of visual spaces per TAB
-set softtabstop=4   " number of spaces in tab when editing
+set softtabstop=6   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
 
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<    " :set list shows all everything but whitespace
@@ -90,6 +90,8 @@ filetype indent on " file type based indentation
 " (despite the mappings later):
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 autocmd FileType java set shiftwidth=4 softtabstop=0
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
 
 " End .vimrc
 
