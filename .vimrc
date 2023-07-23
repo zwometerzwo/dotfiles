@@ -43,7 +43,12 @@ syntax on           " enable Syntax processing
 " Set Gui Font of MacVim larger
 set gfn=Monaco:h14
 
+hi Normal ctermbg=black guibg=black
 set cursorline      " highlight current line
+" hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+" hi CursorLine cterm=NONE ctermbg=darkgrey guibg=darkgrey
+" hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
 " set clipboard+=unnamedplus
 set completeopt-=preview
 
@@ -70,8 +75,10 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 set showcmd         " show command in bottom bar
 
+colorscheme torte
 set termguicolors
 set background=dark
+" set list
 
 filetype indent on  "load filetype-specific indent file
 
@@ -92,8 +99,8 @@ filetype indent on " file type based indentation
 autocmd FileType java set shiftwidth=4 softtabstop=4
 autocmd FileType md set shiftwidth=4 softtabstop=4
 " autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
-" autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-" autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
 
 " End .vimrc
 
