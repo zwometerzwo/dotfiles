@@ -17,6 +17,7 @@ set shiftwidth=2
 set expandtab       " tabs are spaces
 
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<    " :set list shows all everything but whitespace
+set timeoutlen=1000 ttimeoutlen=0
 
 set laststatus=2
 set statusline=
