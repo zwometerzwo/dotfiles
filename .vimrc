@@ -41,6 +41,10 @@ set statusline+=C
 
 syntax on           " enable Syntax processing
 
+colorscheme torte
+set termguicolors
+set background=dark
+
 " Set Gui Font of MacVim larger
 set gfn=Monaco:h14
 
@@ -59,6 +63,7 @@ noremap <tab> gt
 noremap <S-tab> gT
 noremap <Leader>y "+y
 noremap <Leader>p "+p
+noremap <Leader>Y "+Y
 
 vnoremap > >gv
 vnoremap < <gv
@@ -73,12 +78,10 @@ set hlsearch        " highlight matches
 set ignorecase
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
+hi CurSearch guibg=LightGreen guifg=Black
 
 set showcmd         " show command in bottom bar
 
-colorscheme torte
-set termguicolors
-set background=dark
 " set list
 
 filetype indent on  "load filetype-specific indent file
@@ -104,6 +107,4 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
 
 " End .vimrc
-
-
 
