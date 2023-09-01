@@ -76,6 +76,8 @@ nnoremap <c-u> viwU
 set incsearch       " search as characters are entered
 set hlsearch        " highlight matches
 set ignorecase
+set smartcase
+
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 hi CurSearch guibg=LightGreen guifg=Black
