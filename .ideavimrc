@@ -12,7 +12,6 @@ set incsearch
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
-
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
 map <leader>r <Action>(ReformatCode)
@@ -23,5 +22,7 @@ map <leader>r <Action>(ReformatCode)
 "" Map \b to toggle the breakpoint on the current line
 map <leader>b <Action>(ToggleLineBreakpoint)
 
+"" Map Ctrl+q auf Ctrl+v to start visual block mode
+nnoremap <c-q> <c-v>
 
 " Find more examples here: https://jb.gg/share-ideavimrc
