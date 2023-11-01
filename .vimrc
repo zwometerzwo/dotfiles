@@ -11,9 +11,9 @@ set mouse=a
 set ruler
 set scrolloff=5
 
-set tabstop=2       " number of visual spaces per TAB
-set softtabstop=2   " number of spaces in tab when editing
-set shiftwidth=2
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4
 set expandtab       " tabs are spaces
 
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<    " :set list shows all everything but whitespace
@@ -54,7 +54,7 @@ set cursorline      " highlight current line
 " hi CursorLine cterm=NONE ctermbg=darkgrey guibg=darkgrey
 " hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
-" set clipboard+=unnamedplus
+" set clipboard^=unnamed,unnamedplus
 set completeopt-=preview
 
 set showmatch       " highlight matching
@@ -65,11 +65,24 @@ noremap <Leader>y "+y
 noremap <Leader>p "+p
 noremap <Leader>Y "+Y
 
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 vnoremap > >gv
 vnoremap < <gv
 
+noremap ä ddp
 noremap - ddp
+noremap ü ddkP
 noremap _ ddkP
+
+nnoremap <Leader>d "_d
+vnoremap <Leader>d "_d
+nnoremap <Leader>o o<Esc>0"_D
+nnoremap <Leader>O O<Esc>0"_D
+
 inoremap <c-u> <esc>viwUi
 nnoremap <c-u> viwU
 
@@ -102,11 +115,11 @@ filetype indent on " file type based indentation
 " in makefiles, don't expand tabs to spaces, since actual tab characters are
 " needed, and have indentation at 8 chars to be sure that all indents are tabs
 " (despite the mappings later):
-autocmd FileType java set shiftwidth=4 softtabstop=4
-autocmd FileType md set shiftwidth=4 softtabstop=4
+autocmd FileType java set tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType md set tabstop=4 shiftwidth=4 softtabstop=4
 " autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-autocmd FileType yml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType yml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 " End .vimrc
 
