@@ -46,7 +46,8 @@ set termguicolors
 set background=dark
 
 " Set Gui Font of MacVim larger
-set gfn=Monaco:h14
+set guifont=-monospace-:h14
+" set gfn=Monaco:h14
 
 hi Normal ctermbg=black guibg=black
 set cursorline      " highlight current line
@@ -73,9 +74,10 @@ noremap <Right> <NOP>
 vnoremap > >gv
 vnoremap < <gv
 
-noremap ä ddp
+noremap ä }
+noremap ü {
+
 noremap - ddp
-noremap ü ddkP
 noremap _ ddkP
 
 nnoremap <Leader>d "_d
