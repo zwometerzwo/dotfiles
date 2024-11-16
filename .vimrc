@@ -66,10 +66,10 @@ noremap <Leader>y "+y
 noremap <Leader>p "+p
 noremap <Leader>Y "+Y
 
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+" noremap <Up> <NOP>
+" noremap <Down> <NOP>
+" noremap <Left> <NOP>
+" noremap <Right> <NOP>
 
 vnoremap > >gv
 vnoremap < <gv
